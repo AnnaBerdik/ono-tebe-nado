@@ -82,7 +82,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: 1.15;
-    letter-spacing: 30px;
     text-transform: uppercase;
     position: relative;
     z-index: 3;
@@ -133,10 +132,10 @@
     font-style: normal;
     line-height: normal;
     text-transform: uppercase;
-    padding-top: 20px; 
+    padding-top: 20px;
 }
 
-.bet-button{
+.bet-button {
     background-color:transparent;
     width: 257px;
     height: 52px;
