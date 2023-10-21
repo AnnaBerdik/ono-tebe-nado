@@ -14,9 +14,10 @@
 
 .header__links-list {
     display: flex;
-    flex-direction: row;
-    gap: 31px;
+    gap: 33px;
     font-size: 18px;
+    list-style: circle;
+    padding: 45px 50px 45px 0;
 }
 
 .header_logo {
@@ -39,14 +40,12 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24.3px
-}
-.header__links-list {
-    list-style: circle;
+    line-height: 24.3px;
+    padding-top:10px ;
 }
 
 .header__links-list-item_no-bullit {
-    list-style: none; 
+    list-style: none;
 }
 
 .address {
@@ -91,7 +90,6 @@
     text-transform: uppercase;
     position: relative;
     z-index: 3;
-    letter-spacing: 30px;
     margin-bottom: 130px;
 }  
 
@@ -100,7 +98,6 @@
     margin-top: 175px;
     margin-left: 50px;
     line-height: 1;
-
 }
 
 .aligned-text_center {
@@ -127,7 +124,6 @@
     text-transform: uppercase;
     word-spacing: 18.5px;
     display:flex;
-    justify-content: end;
     margin-top: -5px;
 }
 
@@ -136,14 +132,11 @@
     color: #FFF;
     font-size: 22px;
     font-style: normal;
-    line-height: normal;
     text-transform: uppercase;
     padding-top: 20px;
-    
-    
 }
 
-.bet-button{
+.bet-button {
     background-color:transparent;
     width: 257px;
     height: 52px;
@@ -165,10 +158,10 @@
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
+    margin: auto;
     width: 1440px;
     height: 757px;
-    margin: auto; 
-    
+   
 }
 
 .lots__heading {
@@ -200,7 +193,6 @@
     flex-wrap:wrap;
     align-items: center;
     flex-grow: 1;
-    width: 430px;
     height: 450px;
     width: 100%;
     list-style: none;
@@ -248,7 +240,6 @@
 }
 .card__text {
     text-align: left;
-
     position: relative;
     z-index: 1;
 }
@@ -291,7 +282,7 @@
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
-    margin-left: 10px;
+    margin-left: 8px;
     margin-top: 105px;
     display: flex;
     flex-direction:row;
@@ -310,10 +301,10 @@
     line-height: normal;
     list-style: none;
     display: grid;
-    justify-content: space-between;
+    gap: 25px;
     margin-left: 10px;
     margin-top: -20px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .about__logo-image {
