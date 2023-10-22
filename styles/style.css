@@ -2,9 +2,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    padding: 92px 51px 92px 50px;
-    grid-template-rows: 110px;
-
+    padding: 90px 50px 100px 50px;
 }
 
 .header_menu {
@@ -34,9 +32,12 @@
 }
 
 .header__address {
+    justify-self: end;
+}
+
+.address {
     display: flex;
     flex-direction: column;
-    justify-self: end;
     max-width: 240px;
     font-size: 18px;
     font-style: normal;
@@ -56,28 +57,22 @@
     bottom: 0;
     left: 0;
     z-index: 0;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.6);  
 }  
 
 .cover {
     position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-    width: 1440px;
-    height:757px;
     background-image: url("../images/cover.jpg");
     background-repeat: no-repeat;
     background-size: cover ;
     background-position: center;
-    margin: auto;
+    max-height: 757px;
+    padding: 170px 50px 50px 50px;   
+}
+.cover__title {
     display: flex;
     flex-direction: column;
-}
-
-.cover__title {
+    gap: 15px;
     color: #fff;
     font-size: 100px;
     font-style: normal;
@@ -87,27 +82,25 @@
     position: relative;
     z-index: 3;
     letter-spacing: 30px;
-    margin-bottom: 130px;
-}  
+    padding-bottom: 125px;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
+}
 
 .aligned-text {
-    display: block;
-    margin-top: 175px;
-    margin-left: 50px;
     line-height: 1;
-
 }
 
 .aligned-text_center {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
+    text-align:center;
 }
     
 .aligned-text_right {
-    display: block;
-   text-align: end;
-    margin-right: 20px;
+    display: flex;
+    justify-content: end;
+    align-content: start;
 }
 
 .letter-spacing-extended {
@@ -115,14 +108,15 @@
 }
 
 .cover-description {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 78px;
     position: relative;
     z-index: 1;
-    justify-content: end;
     font-size: 22px;
     text-transform: uppercase;
     word-spacing: 18.5px;
-    display:flex;
-    margin-top: -5px;
 }
 
 .cover-description-text {
@@ -131,24 +125,23 @@
     font-size: 22px;
     font-style: normal;
     text-transform: uppercase;
-    padding-top: 20px;
 }
 
 .bet-button {
     background-color:transparent;
     width: 257px;
-    height: 52px;
+    min-height: 52px;
     flex-shrink: 0;
-    border: 1px solid #FFF;
+    border: 1px solid currentColor;
     color: #FFF;
     text-align: center;
+    font-family: Raleway;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
     z-index: 1;
-    margin: 6px 50px 0px 78px;
 }
 
 .lots {
@@ -156,6 +149,7 @@
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
+    padding: 180px 50px 90px 50px;
 }
 
 .lots__heading {
@@ -165,9 +159,8 @@
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    margin-top: 180px;
-    margin-left: 90px;
-    margin-bottom: 27px;
+    padding:0 0 25px 40px;
+
 }
 
 .card {
@@ -179,20 +172,20 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 430px;
-    height: 450px;
+    min-height: 450px;
     padding: 50px 40px;
 }
 
+
+
 .lots__card-list {
-    display: flex;
+   display: flex;
     flex-wrap:wrap;
+    gap: 25px;
     align-items: center;
     flex-grow: 1;
-    height: 450px;
     width: 100%;
     list-style: none;
-    gap: 25px;
-    margin-left: 50px;
 }
 
 .card-link {
@@ -240,74 +233,70 @@
 
 .lots__look-more-link {
     font-size: 20px;
-    margin-left: 90px;
-    margin-top: 33px;
     font-weight: 400;
-}
-
+    padding: 30px 0 0 40px;
+} 
 .about {
-    margin: auto;
-    display: grid;
+    display: grid; 
     grid-template-columns:repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    padding: 180px 50px 40px 50px;
-}
-.about__logo {
-    grid-row-start:1;
-    grid-row-end:2;
-    width: 240px;
-    height: 240px;
-    flex-shrink: 0;
-    background-color: #000;
-    border-radius: 120px;
+    padding: 90px 50px 90px 50px;
+    column-gap: 25px;
+} 
+.about__logo { 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: center; 
+    align-content: center; 
+    width: 240px; 
+    height: 240px; 
+    flex-shrink: 0; 
+    background-color: #000; 
+    border-radius: 50%;
     margin-left: 95px;
-}
-.about__title {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start:-3;
+} 
+
+.about__title { 
+    grid-column-start: 2; 
+    grid-column-end: 4; 
+    grid-row-start:-3; 
     grid-row-end:-2;
-    color: #000;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
+    align-self: center;
+    color: #000; 
+    font-size: 40px; 
+    font-style: normal; 
+    font-weight: 700; 
     text-transform: uppercase;
-    margin-left: 8px;
+    grid-column: 2 / 4;
+    align-self: center;
+    padding-top: 100px;
+   
+} 
+ 
+.about__text {
     display: flex;
-    flex-direction:row;
-    align-items: center;
-}
-
-.about__column {
-    display:grid;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start:-2;
-    grid-row-end:-1;
-    color: #000;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    list-style: none;
-    gap: 25px;
-    margin-top: 5px;
-    margin-left: 10px;
-    max-height: 96px;
-    
-}
-
-.about__logo-image {
-    width: 60%;
-}
+    grid-column: 2 / 4;
+    flex-direction: column;
+    color: #000; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-weight: 400; 
+    line-height: normal; 
+    list-style: none; 
+    gap: 30px; 
+} 
+ 
+.about__logo-image { 
+    width: 60%; 
+} 
 
 .footer {
     display: grid;
-    grid-template-columns:repeat(3,1fr);
-    padding: 145px 50px 90px 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 90px 50px 90px 50px;
 }
 
 .footer__address {
@@ -331,12 +320,11 @@
 
 .footer__social-list {
     display: flex;
-    justify-items: end;
+    justify-self: end;
     gap: 50px;
     list-style: none;
-    margin-left: 210px;
 }
 
 .footer__social-icon {
-   height: 50px;
+   height: 48px;
 }
