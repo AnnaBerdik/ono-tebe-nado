@@ -111,7 +111,7 @@
 .cover-description {
     display: flex;
     justify-content: end;
-    align-items: center;
+    align-items:center;
     gap: 78px;
     position: relative;
     z-index: 1;
@@ -322,7 +322,7 @@
 .footer__social-list {
     display: flex;
     justify-self: end;
-    gap: 50px;
+    gap: 48px;
     list-style: none;
 }
 
